@@ -55,11 +55,13 @@ sudo systemctl status nginx-agent
 ```
 
 #### 1.2 OS Compatibility Check for R37
+Review Latest Doc : https://github.com/arun-nginx/Nginx-Upgrade/blob/main/Upgrade.md
+
 Verify your OS is supported by R37. Based on the R35 support matrix (R37 expected to be similar):
 
 | Distribution | Supported Versions |
 |--------------|-------------------|
-| RHEL / Rocky Linux | 8.1+, 9.0+ |
+| RHEL / Rocky Linux | 8.1+, 9.0+. 10.0+ |
 | Ubuntu | 22.04 LTS, 24.04 LTS |
 | Debian | 11, 12 |
 | Amazon Linux | 2 LTS, 2023 |
@@ -77,6 +79,9 @@ This is the **#1 blocker** for your upgrade. Without this, the upgrade will fail
 !!! NGINX Plus was not upgraded !!!
 NGINX Plus R33 introduces a breaking change.
 ```
+
+This is referenced from this doc, so you can review this document as well to crosscheck for any doubts: 
+https://docs.nginx.com/nginx/admin-guide/installing-nginx/upgrading-nginx-plus/#nginx-plus-r32-and-earlier
 
 **Steps to obtain and place the JWT:**
 
@@ -123,6 +128,13 @@ mgmt {
 > ℹ️ **Grace Period:** If the instance has reported at least once, a 180-day grace period applies during outages. Per KB K000148234 Internal
 
 #### 1.5 NIM Compatibility Check (If Managed by NIM)
+
+**Check Documentation:**
+**Supported Linux Distributions:** https://docs.nginx.com/nginx-instance-manager/fundamentals/tech-specs/
+
+**Supported NGINX Instance Manager versions:** https://docs.nginx.com/nginx-instance-manager/fundamentals/tech-specs/#supported-nginx-instance-manager-versions
+
+**Supported NGINX Versions:** https://docs.nginx.com/nginx-instance-manager/fundamentals/tech-specs/#nginx-versions
 
 > 📌 **Requirement:** NGINX Plus R33+ requires **NGINX Instance Manager 2.18 or later**.
 
