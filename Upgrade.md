@@ -416,7 +416,7 @@ docker logs <container-name> | grep -v "^$" | tail -20
 | Item | VM: R32 → R37 | Container: R35 → R37 |
 |------|--------------|---------------------|
 | **JWT Required?** | ✅ YES — Critical blocker | ✅ Already in use |
-| **Breaking Change?** | ✅ YES (R33 licensing change) | ❌ No breaking changes |
+| **Breaking Change?** | ✅ YES (R33 licensing change) | ❌ No visible breaking changes but still validate with support |
 | **Upgrade Method** | In-place package upgrade | Replace container image |
 | **Downtime Risk** | Low (reload) | Minimal (blue/green) |
 | **Backup Required?** | ✅ YES | Config in volumes/CM |
