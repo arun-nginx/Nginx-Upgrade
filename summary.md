@@ -32,3 +32,13 @@ Refer to the following guides for the upgrade execution:
 
 ### 4.2 Changelog
 * Review intermediate behavior changes and updates here: [NGINX Plus Releases Changelog](https://docs.nginx.com/nginx/releases/)
+
+### 5. RollBack Plan:
+
+You can list and downgrade the nginx version. Example with yum.
+
+```bash
+yum list --showduplicates nginx-plus
+yum downgrade nginx-plus-<previous-version>
+```
+
