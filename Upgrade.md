@@ -13,6 +13,8 @@ Starting with NGINX Plus R33, a **JWT (JSON Web Token) license is mandatory**. W
 - **VM Path (R32→R37):** This is the #1 blocker. You must obtain and install the JWT before upgrading.
 - **Container Path (R35→R37):** JWT is already in use, so this does not apply.
 
+**Note: Review with PS or Support team for any other breaking changes**
+
 ---
 
 ## 📖 Table of Contents
