@@ -19,6 +19,10 @@ Verify container compatibility with your management plane if managed by NGINX In
 ---
 
 ## 3. Installation Steps (Blue/Green Strategy)
+
+Install nginxplus on docker:
+https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-docker/
+
 Refer to the following guides for container upgrade orchestration and image deployment:
 * **Lab Reference:** [Upgrade NGINX Plus on Docker](https://docs.nginx.com/nginx-one-console/workshops/lab5/upgrade-nginx-plus-to-latest-version/)
 * **Execution:** Log into the private registry (`private-registry.nginx.com`) using your JWT, pull the target `r37` image, spin up the new container alongside the old one, test syntax via `nginx -t`, shift traffic, and safely terminate the R35 container.
