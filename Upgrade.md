@@ -57,18 +57,6 @@ sudo systemctl status nginx-agent
 #### 1.2 OS Compatibility Check for R37
 Review Latest Doc : https://github.com/arun-nginx/Nginx-Upgrade/blob/main/Upgrade.md
 
-Verify your OS is supported by R37. Based on the R35 support matrix (R37 expected to be similar):
-
-| Distribution | Supported Versions |
-|--------------|-------------------|
-| RHEL / Rocky Linux | 8.1+, 9.0+. 10.0+ |
-| Ubuntu | 22.04 LTS, 24.04 LTS |
-| Debian | 11, 12 |
-| Amazon Linux | 2 LTS, 2023 |
-| Oracle Linux | 8.1+, 9 |
-| AlmaLinux | 8, 9 |
-| Alpine Linux | 3.19+ |
-
 > ⚠️ **Important:** Ubuntu 20.04 is removed as of R35. If running Ubuntu 20.04, an OS upgrade is required first.
 
 #### 1.3 JWT License — MANDATORY for R32→R33+ Upgrade
@@ -125,7 +113,6 @@ mgmt {
 
 > ⚠️ **Warning:** Per [KB K000153170](https://my.f5.com/manage/s/article/K000153170), failure to configure usage reporting in disconnected environments will result in 503 errors and NGINX stopping traffic processing.
 
-> ℹ️ **Grace Period:** If the instance has reported at least once, a 180-day grace period applies during outages. Per KB K000148234 Internal
 
 #### 1.5 NIM Compatibility Check (If Managed by NIM)
 
