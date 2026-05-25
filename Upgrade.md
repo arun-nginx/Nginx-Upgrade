@@ -414,21 +414,6 @@ docker exec <container-name> tail -20 /var/log/nginx/error.log | grep "usage rep
 docker logs <container-name> | grep -v "^$" | tail -20
 ```
 ---
-
-## 📊 Summary Comparison Table (Validate below with support or PS)
-
-| Item | VM: R32 → R37 | Container: R35 → R37 |
-|------|--------------|---------------------|
-| **JWT Required?** | ✅ YES — Critical blocker | ✅ Already in use |
-| **Breaking Change?** | ✅ YES (R33 licensing change) | ❌ No visible breaking changes but still validate with support |
-| **Upgrade Method** | In-place package upgrade | Replace container image |
-| **Downtime Risk** | Low (reload) | Minimal (blue/green) |
-| **Backup Required?** | ✅ YES | Config in volumes/CM |
-| **NIM Version Check?** | ✅ YES (≥ 2.18 for R33+) | ✅ YES if NIM-managed |
-| **Usage Reporting Config** | Required in nginx.conf | Via env var or config |
-| **OS Compatibility** | Must verify per distro | N/A (image-based) |
-
----
 ## 📚 Key References
 
 ### Knowledge Base Articles
