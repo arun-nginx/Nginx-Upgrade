@@ -1,4 +1,6 @@
-# NGINX Plus Upgrade Guide
+# NGINX Plus Upgrade Reference
+
+**Disclaimer: This is not official documentation and should be used only as a reference guide. Please validate and test all steps before implementation, and make any necessary modifications based on your environment. It is recommended to confirm the steps with the F5 Support team for the latest updates and validation.**
 
 > **Upgrade Paths:** R32 → R37 (VM) | R35 → R37 (Containers)
 
@@ -411,7 +413,7 @@ docker logs <container-name> | grep -v "^$" | tail -20
 ```
 ---
 
-## 📊 Summary Comparison Table
+## 📊 Summary Comparison Table (Validate below with support or PS)
 
 | Item | VM: R32 → R37 | Container: R35 → R37 |
 |------|--------------|---------------------|
