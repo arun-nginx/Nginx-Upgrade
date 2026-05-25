@@ -59,7 +59,7 @@ sudo systemctl status nginx-agent
 ```
 
 #### 1.2 OS Compatibility Check for R37
-Review Latest Doc : https://github.com/arun-nginx/Nginx-Upgrade/blob/main/Upgrade.md
+Review Latest Doc : https://docs.nginx.com/nginx/releases/#r37.0
 
 > ⚠️ **Important:** Ubuntu 20.04 is removed as of R35. If running Ubuntu 20.04, an OS upgrade is required first.
 
