@@ -7,9 +7,7 @@
 * **Reference:** [NGINX Plus R37 Release Notes](https://docs.nginx.com/nginx/releases/#r37.0)
 
 ### B. NIM Compatibility Check
-Verify the following technical specifications if managed by NGINX Instance Manager:
-* **Supported Linux Distributions:** [NIM Tech Specs](https://docs.nginx.com/nginx-instance-manager/fundamentals/tech-specs/)
-* **Supported NIM Versions:** [NIM Version Specs](https://docs.nginx.com/nginx-instance-manager/fundamentals/tech-specs/#supported-nginx-instance-manager-versions)
+Verify the nginx compatibility with currently used NIM, if managed by NGINX Instance Manager:
 * **Supported NGINX Versions:** [NIM NGINX Version Specs](https://docs.nginx.com/nginx-instance-manager/fundamentals/tech-specs/#nginx-versions)
 
 ---
